@@ -16,22 +16,22 @@ export class AppComponent {
     this.platformId = platformId;
     if (isPlatformBrowser(platformId)) {
       // runs on client / browser
-      console.log("Output is generated only in browser not in server.");
+      // console.log("Output is generated only in browser not in server.");
     }
     if (isPlatformServer(platformId)) {
       // runs on server / node
-      console.log("Output is generated only in server not in browser.");
+      // console.log("Output is generated only in server not in browser.");
     }
   }
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       // runs on client / browser
-      console.log("Output is generated only in browser not in server.");
+      // console.log("Output is generated only in browser not in server.");
     }
     if (isPlatformServer(this.platformId)) {
       // runs on server / node
-      console.log("Output is generated only in server not in browser.");
+      // console.log("Output is generated only in server not in browser.");
     }
   }
 
