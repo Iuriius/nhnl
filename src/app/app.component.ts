@@ -12,6 +12,7 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'nhnl';
   i = 0;
+  bool = false;
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
     this.platformId = platformId;
     if (isPlatformBrowser(platformId)) {
@@ -37,5 +38,9 @@ export class AppComponent {
 
   buttonClick() {
     this.i++;
+  }
+
+  toggle() {
+    this.bool = !this.bool;
   }
 }
