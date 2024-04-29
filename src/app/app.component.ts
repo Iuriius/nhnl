@@ -1,6 +1,7 @@
 import { isPlatformBrowser, isPlatformServer } from '@angular/common';
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { log } from 'console';
 
 @Component({
   selector: 'app-root',
@@ -38,9 +39,11 @@ export class AppComponent {
 
   buttonClick() {
     this.i++;
+    console.log("clicked");
   }
 
   toggle() {
     this.bool = !this.bool;
+    console.log("clicked");
   }
 }
