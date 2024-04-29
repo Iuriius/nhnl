@@ -2,11 +2,12 @@ import { CommonModule, isPlatformBrowser, isPlatformServer } from '@angular/comm
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, FormsModule],
+  imports: [CommonModule, RouterOutlet, FormsModule, MatIconModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -35,4 +36,5 @@ export class AppComponent {
       // console.log("Output is generated only in server not in browser.");
     }
   }
+  mainlogo = 'assets/images/mainlogo.webp';
 }

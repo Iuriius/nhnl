@@ -1,7 +1,45 @@
-.hide {
-    display: none;
+.fff {
+    color: lightcoral;
+    font-size: 5rem;
+    height: 5rem;
+    width: 5rem;
 }
 
-.initial {
-    display: block;
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #78BF60;
+}
+
+.mainlogo {
+    width: 200px;
+    padding: 0.5rem;
+
+    @media screen and (min-width: 1200px) {
+        width: 300px;
+        padding: 1rem;
+    }
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+    gap: 1rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #78BF60;
+    color: azure;
+    line-height: 3rem;
 }
