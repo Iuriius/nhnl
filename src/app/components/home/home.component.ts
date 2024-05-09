@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HeroswiperComponent } from '../heroswiper/heroswiper.component';
+import { log } from 'node:console';
 
 
 @Component({
@@ -10,5 +11,8 @@ import { HeroswiperComponent } from '../heroswiper/heroswiper.component';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  logs() {
+    console.log("clicked");
 
+  }
 }
