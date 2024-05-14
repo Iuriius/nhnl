@@ -13,6 +13,6 @@ import { log } from 'node:console';
 export class HomeComponent {
   logs() {
     console.log("clicked");
-
   }
+  ddd = false
 }
